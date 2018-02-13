@@ -12,6 +12,7 @@
 		13242F0C202D4DF10008352A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13242F0A202D4DF00008352A /* Main.storyboard */; };
 		13242F0E202D4DF10008352A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13242F0D202D4DF10008352A /* Assets.xcassets */; };
 		13242F11202D4DF10008352A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 13242F0F202D4DF10008352A /* LaunchScreen.storyboard */; };
+		1394FD8D202DDB2A00656B28 /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 1394FD8C202DDB2A00656B28 /* Reachability.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,9 @@
 		13242F0D202D4DF10008352A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		13242F10202D4DF10008352A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		13242F12202D4DF10008352A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1394FD8A202DDB2900656B28 /* ESP8266_LED-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ESP8266_LED-Bridging-Header.h"; sourceTree = "<group>"; };
+		1394FD8B202DDB2A00656B28 /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		1394FD8C202DDB2A00656B28 /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,9 @@
 				13242F0D202D4DF10008352A /* Assets.xcassets */,
 				13242F0F202D4DF10008352A /* LaunchScreen.storyboard */,
 				13242F12202D4DF10008352A /* Info.plist */,
+				1394FD8B202DDB2A00656B28 /* Reachability.h */,
+				1394FD8C202DDB2A00656B28 /* Reachability.m */,
+				1394FD8A202DDB2900656B28 /* ESP8266_LED-Bridging-Header.h */,
 			);
 			path = ESP8266_LED;
 			sourceTree = "<group>";
@@ -96,6 +103,7 @@
 				TargetAttributes = {
 					13242F02202D4DF00008352A = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -137,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				13242F09202D4DF00008352A /* ViewController.swift in Sources */,
+				1394FD8D202DDB2A00656B28 /* Reachability.m in Sources */,
 				13242F07202D4DF00008352A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -274,6 +283,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 849B5HQM6P;
 				INFOPLIST_FILE = ESP8266_LED/Info.plist;
@@ -281,6 +291,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MLR.ESP8266-LED";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ESP8266_LED/ESP8266_LED-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -290,6 +302,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 849B5HQM6P;
 				INFOPLIST_FILE = ESP8266_LED/Info.plist;
@@ -297,6 +310,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.MLR.ESP8266-LED";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "ESP8266_LED/ESP8266_LED-Bridging-Header.h";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
